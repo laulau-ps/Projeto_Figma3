@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Outfit";
+    text-decoration: none;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+:root {
+    --main-color: #C68313;
+    --rgba-color: rgba(198, 131, 19, 20%);
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 27px 30px;
+    border-radius: 20px;
+    margin-top: 18px;
+
+    & nav {
+        display: flex;
+        gap: 70px;
+
+        & a {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        & .home {
+            color: var(--main-color);
+        }
+    }
+
+    & .registrar {
+        background-color: var(--main-color);
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+.hero-sec {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+
+    & .hero-sec-left {
+        margin-top: 148px;
+        width: 50%;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-left: 86px;
+
+        & .category {
+            display: flex;
+            gap: 10px;
+            padding: 6px 16px;
+            background-color: var(--rgba-color);
+            border-radius: 4px;
+            max-width: fit-content;
+            height: 48px;
+            align-items: center;
+
+            & p {
+                color: var(--main-color);
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        & .text {
+            & h2 {
+                font-weight: 300;
+                font-size: 50px;
+            }
+
+            & h1 {
+                font-weight: 500;
+                font-size: 86px;
+                white-space: nowrap;
+            }
+
+            & p {
+                font-size: 20px;
+            }
+        }
+
+        & .buttons {
+            display: flex;
+            gap: 20px;
+
+            & .btn-1 {
+                background-color: var(--main-color);
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 14px 24px;
+                border-radius: 8px;
+            }
+
+            & .btn-2 {
+                padding: 14px 24px;
+                border-radius: 8px;
+                border: 1px solid var(--main-color);
+                color: var(--main-color);
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        & .partners {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            & p {
+                font-size: 18px;
+                font-weight: 500;
+                color: var(--main-color);
+            }
+
+            & .icons {
+                display: flex;
+                gap: 39px;
+
+                & .dribbble{
+                    width: 98px;
+                }
+            }
+
+        }
+    }
+
+    & .hero-image{
+        width: 50%;
+        & img{
+            width: 100%;
+            height: 100%;
+            max-width: max-content;
+            min-height: max-content;
+        }
+    }
+}
