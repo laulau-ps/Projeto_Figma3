@@ -141,7 +141,7 @@ header {
                 display: flex;
                 gap: 39px;
 
-                & .dribbble{
+                & .dribbble {
                     width: 98px;
                 }
             }
@@ -149,9 +149,109 @@ header {
         }
     }
 
-    & .hero-image{
+    & .hero-image {
         width: 50%;
-        & img{
+
+        & img {
+            width: 100%;
+            height: 100%;
+            max-width: max-content;
+            min-height: max-content;
+        }
+    }
+}
+
+.services-sec {
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 962px;
+    padding-right: 104px;
+
+
+    & .services-sec-right {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        width: 642px;
+        max-height: fit-content;
+
+        & .category {
+            display: flex;
+            gap: 10px;
+            padding: 6px 16px;
+            background-color: var(--rgba-color);
+            border-radius: 4px;
+            max-width: fit-content;
+            height: 48px;
+            align-items: center;
+
+            & p {
+                color: var(--main-color);
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        & .text {
+            & h2 {
+                font-weight: 300;
+                font-size: 50px;
+                white-space: nowrap;
+            }
+
+            & .bold {
+                font-size: 62px;
+                font-weight: 500;
+            }
+
+            & p{
+                font-size: 20px;
+            }
+        }
+
+        & .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 560px;
+            height: 348px;
+            gap: 20px;
+
+            & div{
+                display: flex;
+                width: 270px;
+                height: 164px;
+                padding: 14px 24px;
+                border: 2px solid var(--main-color);
+                border-radius: 12px;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                & img{
+                    width: 40%;
+                }
+
+                & p{
+                    font-size: 22px;
+                    font-weight: 600;
+                    & b{
+                        font-weight: 600;
+                        color: var(--main-color);
+                    }
+                }
+            }
+
+        }
+    }
+
+    & .services-sec-left {
+        width: 50%;
+
+        & img {
             width: 100%;
             height: 100%;
             max-width: max-content;
