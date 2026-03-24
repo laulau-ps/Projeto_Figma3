@@ -59,6 +59,7 @@ header {
     align-items: center;
     overflow: hidden;
     width: 100%;
+    height: 940px;
 
     & .hero-sec-left {
         margin-top: 148px;
@@ -166,7 +167,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 962px;
+    height: 940px;
     padding-right: 104px;
 
 
@@ -268,7 +269,7 @@ header {
     justify-content: center;
     gap: 8px;
 
-    height: 950px;
+    height: 940px;
 
     & .reach-sec-left {
         display: flex;
@@ -334,4 +335,162 @@ header {
             min-height: max-content;
         }
     }
+}
+
+.review-sec {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 940px;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+
+    & .category {
+        display: flex;
+        gap: 10px;
+        padding: 6px 16px;
+        background-color: var(--rgba-color);
+        border-radius: 4px;
+        max-width: fit-content;
+        height: 48px;
+        align-items: center;
+
+        & p {
+            color: var(--main-color);
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+
+    & .text {
+
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        align-items: center;
+
+
+        & h2 {
+            font-size: 70px;
+            font-weight: 600;
+
+            & b {
+                font-weight: 600;
+                color: var(--main-color);
+            }
+        }
+
+        & .desc {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    & .cards {
+        display: flex;
+        gap: 30px;
+
+
+        & .left {
+            width: 428px;
+            height: 300px;
+            border-radius: 14px;
+            border: 2px solid transparent;
+            background-image:
+                linear-gradient(#F7F7F7, #F7F7F7),
+                linear-gradient(270deg, #C68313 0%, rgba(198, 131, 19, 0%) 100%);
+
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        & .right {
+            width: 428px;
+            height: 300px;
+            border-radius: 14px;
+            border: 2px solid transparent;
+            background-image:
+                linear-gradient(#F7F7F7, #F7F7F7),
+                linear-gradient(90deg, #C68313 0%, rgba(198, 131, 19, 0%) 100%);
+
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        & .center {
+            border: solid 2px var(--main-color);
+            width: 428px;
+            height: 300px;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                position: absolute;
+                top: 50px;
+                left: 30px;
+            }
+
+            & .review {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                max-width: 286px;
+                max-height: fit-content;
+                justify-content: center;
+                align-items: center;
+
+                & .p-1 {
+                    font-size: 20px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 70%);
+                }
+
+                & .p-2 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: var(--main-color);
+                }
+
+                & .p-3 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: rgba(0, 0, 0, 60%);
+                }
+            }
+
+
+        }
+    }
+
+    & .dots {
+
+        display: flex;
+        gap: 10px;
+
+
+        & div {
+            border-radius: 100px;
+            width: 20px;
+            height: 20px;
+        }
+
+        & .off {
+            background-color: #d9d9d9;
+
+        }
+
+        & .on {
+            background-color: var(--main-color);
+        }
+    }
+
 }
